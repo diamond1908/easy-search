@@ -1,0 +1,229 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./azul.jpg");
+    background-size: cover;
+
+    
+
+}
+
+
+.container{
+    width: 100%;
+    max-width: 650px;
+    background: rgba(135,206,250,0.6);
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 20px;
+    
+   
+}
+.easy{
+    text-align: left;
+    color: rgb(168, 224, 255);;
+}
+
+
+.form-voltar{
+    text-align: left;
+    color: black;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid black;
+    margin-right: 10px;
+
+}
+
+.form-title{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color:black;
+   
+   }
+
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.user-input-box:nth-child(2n){
+    justify-content: end;
+}
+
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+
+}
+
+.user-input-box label{
+    width: 95%;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+    
+}
+
+.user-input-box input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+    border-radius: 50px;
+}
+
+.gender-title{
+    color:white;
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+}
+
+.select{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+    border-radius: 50px;
+}
+
+.gender-category{
+    margin: 15px 0;
+    color: white;
+}
+
+.gender-category label{
+    padding: 0 20px 0 5px;
+}
+
+.gender-category label,
+.gender-category input,
+.form-submit-btn input{
+    cursor: pointer;
+}
+
+.form-submit-btn{
+    margin-top: 40px;
+    
+
+}
+
+
+
+.form-submit-btn input{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border:none;
+    border-radius: 3px;
+    color: rgb(209, 209, 209);
+    background: rgb(5, 154, 234);
+    border-radius: 50px;
+}
+
+.form-submit-btn input:hover{
+    background:rgb(5, 154, 234);
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+}
+.date{
+    border-radius: 10px;
+}
+.genero{
+    margin-top: 8%;
+}
+
+.custom-select select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 12px 24px;
+    border: 1px solid #ccc;
+    border-radius: 20px; 
+    background-color: #fff;
+    font-size: 14px;
+    width: 200px; 
+  }
+  
+   
+  
+  .custom-select::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-image: url("azul.jpg"); /* Substitua "seta.png" com o caminho para a imagem da seta desejada */
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    background-position: center;
+  }
+  
+   
+  
+  .custom-select option {
+    padding: 8px 16px;
+    border-radius: 20px;
+  }
+
+
+
+@media(max-width: 600px){
+    .container{
+        min-width: 280px;
+    }
+
+    .user-input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .user-input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+
+    .gender-category{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .main-user-info{
+        max-height: 380px;
+        overflow: auto;
+    }
+
+    .main-user-info::-webkit-scrollbar{
+        width: 0;
+    }
+   
+}
